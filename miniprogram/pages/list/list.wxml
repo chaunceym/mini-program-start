@@ -1,0 +1,17 @@
+<!--miniprogram/pages/list.wxml-->
+<view>
+<swiper indicator-dots="true" indicator-color="rgba(255,255,255,.8)"autoplay="true" circular="true">
+<swiper-item>
+<image src='../static/images/blue2.png'></image>
+</swiper-item>
+<swiper-item>
+<image src='../static/images/greensun.png'></image>
+</swiper-item>
+<swiper-item>
+<image src='../static/images/coffee.png'></image>
+</swiper-item>
+<swiper-item>
+<image src='../static/images/moon.png'></image>
+</swiper-item>
+</swiper>
+</view>

@@ -1,0 +1,17 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.userinfo-avatar{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+}
+.middleText{
+  font-weight: bold;
+  margin: 100rpx 0 200rpx 0;
+}
+.welcomeBtn{
+  border: 1px solid #999;
+}
