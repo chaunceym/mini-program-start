@@ -1,0 +1,21 @@
+<!--miniprogram/pages/list-template/list-template.wxml-->
+<template name="listTemplate">
+<view class="tempContainer">
+<view class="userInfo">
+  <image class="avatar" src="{{avatarUrl}}"></image>
+  <text>{{date}}</text>
+</view>
+<view class="article">
+<text class="article-title">{{article_title}}</text>
+<image class="article-image" src="{{article_image}}"></image>
+<text class="article-content">{{article_content}}</text>
+</view>
+<view class="collection">
+<icon type="success"></icon>
+<text>{{good_data}}</text>
+<icon type="success"></icon>
+<text>{{start_data}}</text> 
+</view>
+</view>
+</template>
+

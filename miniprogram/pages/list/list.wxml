@@ -1,4 +1,5 @@
 <!--miniprogram/pages/list.wxml-->
+<import src="../template/list-template.wxml"/>
 <view>
 <swiper indicator-dots="true" indicator-color="rgba(255,255,255,.8)"autoplay="true" circular="true">
 <swiper-item>
@@ -14,4 +15,10 @@
 <image src='../static/images/moon.png'></image>
 </swiper-item>
 </swiper>
+<block wx:for="{{list_info}}" wx:key="index">
+<view>
+<template is="listTemplate" data="{{...item}}"/>  
+</view>
+</block>
+
 </view>
