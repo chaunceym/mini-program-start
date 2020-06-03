@@ -14,8 +14,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options:any) {
-    console.log(options)
-    console.log(appData)
     this.setData({
       movieDetailData: appData.data.moviesData[options.index]
     })
