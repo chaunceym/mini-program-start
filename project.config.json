@@ -32,7 +32,8 @@
 			"outputPath": ""
 		},
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"nodeModules": true
 	},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

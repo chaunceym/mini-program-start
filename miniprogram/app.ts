@@ -1,5 +1,5 @@
 // app.ts
-App<IAppOption>({
+App({
   data: {
     moviesData: []
   }
