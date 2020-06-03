@@ -1,65 +1,36 @@
-// miniprogram/pages/list.js
-const {listData}  = require('../../data/list_info.js')
+"use strict";
+var listData = require('../../data/list_info.js').listData;
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-
-  data: {
-    list_info: []
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function () {
-    console.log(listData)
-    this.setData({
-      list_info: listData
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-})
+    data: {
+        list_info: []
+    },
+    onLoad: function () {
+        this.setData({
+            list_info: listData
+        });
+    }, 
+    toCarouselDetail(event:any){
+      const index = event.target.dataset.index
+      wx.navigateTo({
+        url: `/pages/detail/detail?index=${index}`,
+      })
+    },
+    toDetail(event:any){
+        const index = event.currentTarget.dataset.index
+        wx.navigateTo({
+          url: `/pages/detail/detail?index=${index}`,
+        })
+    },
+    onReady: function () {
+    },
+    onShow: function () {
+    },
+    onHide: function () {
+    },
+    onUnload: function () {
+    },
+    onPullDownRefresh: function () {
+    },
+    onReachBottom: function () {
+    },
+});

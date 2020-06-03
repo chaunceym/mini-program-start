@@ -1,16 +1,16 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <view class="detail-container">
-	<image class="article-image" src="../static/images/coldplay1.jpg"></image>
+	<image class="article-image" src="{{detailDataInfo.article_image}}"></image>
 	<view class="userInfo">
-		<image src="../static/images/avator1.png"></image>
-		<text>美国队长</text><text>发布于</text>
-		<text>2020-03-03</text>
+		<image src="{{detailDataInfo.avatarUrl}}"></image>
+		<text>{{detailDataInfo.article_author}}</text><text>发布于</text>
+		<text>{{detailDataInfo.date}}</text>
 	</view>
 	<view class="opreation">
-		<mp-icon class="first-icon" type="outline" icon="tag" color="like" size="{{30}}"></mp-icon>
+		<mp-icon class="first-icon" type="outline" icon="like" color="black" size="{{30}}"></mp-icon>
 		<mp-icon type="outline" icon="share" color="#4AB0BA" size="{{30}}"></mp-icon>
 	</view>
-	<text class="article-title">I am a hero</text>
-	<text class="article-content">转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章转发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章发此文章</text>
+	<text class="article-title">{{detailDataInfo.article_title}}</text>
+	<text class="article-content">{{detailDataInfo.article_content}}</text>
 	<button>转发此文章</button>
 </view>

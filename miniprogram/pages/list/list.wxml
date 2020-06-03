@@ -1,18 +1,18 @@
 <!--miniprogram/pages/list.wxml-->
 <import src="../template/list-template.wxml"/>
 <view>
-<swiper indicator-dots="true" indicator-color="rgba(255,255,255,.8)"autoplay="true" circular="true">
+<swiper catchtap="toCarouselDetail" indicator-dots="true" indicator-color="rgba(255,255,255,.8)"autoplay="true" circular="true">
 <swiper-item>
-<image src='../static/images/blue2.png'></image>
+<image data-index="0" src='../static/images/blue2.png'></image>
 </swiper-item>
 <swiper-item>
-<image src='../static/images/greensun.png'></image>
+<image data-index="1" src='../static/images/greensun.png'></image>
 </swiper-item>
 <swiper-item>
-<image src='../static/images/coffee.png'></image>
+<image data-index="2" src='../static/images/coffee.png'></image>
 </swiper-item>
 <swiper-item>
-<image src='../static/images/moon.png'></image>
+<image data-index="3" src='../static/images/moon.png'></image>
 </swiper-item>
 </swiper>
 <block wx:for="{{list_info}}" wx:key="index">
