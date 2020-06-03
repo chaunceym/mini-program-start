@@ -1,18 +1,24 @@
 // miniprogram/pages/movie-detail/movie-detail.js
+const appData = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    movieDetailData: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (options:any) {
+    console.log(options)
+    console.log(appData)
+    this.setData({
+      movieDetailData: appData.data.moviesData[options.index]
+    })
   },
 
   /**

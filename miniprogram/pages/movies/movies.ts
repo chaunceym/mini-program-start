@@ -1,5 +1,6 @@
 // miniprogram/pages/movies/movies.js
 const moviesUrl = 'http://t.yushu.im/v2/movie/top250';
+const appMovesData = getApp();
 Page({
 
   /**
@@ -19,6 +20,7 @@ Page({
         this.setData({
           moviesData: data.data.subjects
         })
+        appMovesData.data.moviesData = data.data.subjects
       }
     })
   },

@@ -1,1 +1,20 @@
 /* miniprogram/pages/movie-detail/movie-detail.wxss */
+.movie-detail-container{
+  display: flex;
+  flex-direction: column;
+  padding: 60rpx;
+}
+.movie-detail-container .movie-poster{
+  width: 80%;
+  margin: 60rpx auto;
+}
+.movie-detail-container .movie-info{
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 80rpx 50rpx 80rpx;
+}
+.movie-detail-container .i-want-watch-movie{
+  width: 80%;
+  background-color: green;
+  color: #fff;
+}
