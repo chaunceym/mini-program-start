@@ -7,7 +7,8 @@
 		<text>{{detailDataInfo.date}}</text>
 	</view>
 	<view class="opreation">
-		<mp-icon class="first-icon" type="outline" icon="like" color="black" size="{{30}}"></mp-icon>
+		<mp-icon wx:if="{{!isAddMyFavourite}}" catchtap="addMyFavourite" class="first-icon" type="outline" icon="like" color="black" size="{{30}}"></mp-icon>
+		<mp-icon wx:else catchtap="addMyFavourite" class="first-icon" type="field" icon="like" color="red" size="{{30}}"></mp-icon>
 		<mp-icon type="outline" icon="share" color="#4AB0BA" size="{{30}}"></mp-icon>
 	</view>
 	<text class="article-title">{{detailDataInfo.article_title}}</text>
