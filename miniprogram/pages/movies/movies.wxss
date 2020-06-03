@@ -1,0 +1,23 @@
+/* miniprogram/pages/movies/movies.wxss */
+.movie-container{
+  padding: 20rpx;
+  display: flex;
+}
+.movie-container .movie-poster{
+  width: 200rpx;
+  height: 300rpx;
+}
+.movie-container .movie-info{
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.movie-container .movie-info text:nth-child(2){
+  padding: 20rpx 0;
+}
+.movie-container .movie-level{
+  margin-left: auto;
+  font-size: 25px;
+  color: red;
+  font-weight: 700;
+}

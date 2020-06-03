@@ -49,7 +49,11 @@ Page({
       }
     })
   },
-
+  shareArticle(){
+    wx.showActionSheet({
+      itemList: ['分享到微信','分享到朋友圈','分享到微博']
+    })
+  },
   onLoad: function (options: any) {
 
     this.setData({

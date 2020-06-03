@@ -1,14 +1,32 @@
 {
   "pages": [
+    "pages/movies/movies",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/movie-detail/movie-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#00B26A",
     "navigationBarTitleText": "chauncey",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "奇怪周刊",
+        "iconPath": "tab_images/book.png",
+        "selectedIconPath": "tab_images/book_on.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "秀电影",
+        "iconPath": "tab_images/movie.png",
+        "selectedIconPath": "tab_images/movie_on.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
