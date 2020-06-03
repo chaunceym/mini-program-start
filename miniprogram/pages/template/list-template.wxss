@@ -38,6 +38,6 @@
   align-items: center;
   padding-left: 10rpx;
 }
-.tempContainer .collection icon{
+.tempContainer .collection my-icon{
   padding: 20rpx 20rpx;
 }

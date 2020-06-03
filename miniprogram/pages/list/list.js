@@ -10,6 +10,12 @@ Page({
             list_info: listData
         });
     },
+    toDetail(event){
+        console.log(event)
+        wx.navigateTo({
+          url: '/pages/detail/detail',
+        })
+    },
     onReady: function () {
     },
     onShow: function () {

@@ -11,9 +11,9 @@
 <text class="article-content">{{article_content}}</text>
 </view>
 <view class="collection">
-<icon type="success"></icon>
+<mp-icon type="field" icon="like" color="red" size="{{25}}"></mp-icon>
 <text>{{good_data}}</text>
-<icon type="success"></icon>
+<mp-icon type="field" icon="tag" color="yellow" size="{{25}}"></mp-icon>
 <text>{{start_data}}</text> 
 </view>
 </view>

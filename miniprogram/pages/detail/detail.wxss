@@ -1,0 +1,46 @@
+/* miniprogram/pages/detail/detail.wxss */
+.detail-container{
+  display: flex;
+  flex-direction: column;
+}
+.detail-container .article-image{
+  width: 100%;
+}
+.detail-container .userInfo{
+  display: flex;
+  align-items: center;
+}
+.detail-container .userInfo image{
+  margin: 20rpx 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.detail-container .userInfo text:nth-child(3){
+  padding: 0 20rpx;
+}
+.detail-container .opreation{
+  display: flex;
+  padding-right: 20rpx;
+  justify-content: flex-end;
+  position: relative;
+}
+.detail-container .opreation::before{
+  content: '';
+  position: absolute;
+  border: 1px solid #ddd;
+  width: 70%;
+  top: 50%;
+  left: 40rpx;
+  transform: translateY(-50%);
+}
+.detail-container .opreation .first-icon{
+  margin-right: 10rpx;
+}
+.detail-container .article-title{
+  padding: 50rpx 0;
+  text-align: center;
+}
+.detail-container .article-content{
+  padding: 0 40rpx;
+}

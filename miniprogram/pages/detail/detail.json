@@ -2,6 +2,6 @@
   "usingComponents": {
     "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon"
   },
-  "navigationBarTitleText": "周刊",
+  "navigationBarTitleText": "文章详情",
   "navigationBarTextStyle": "white"
 }
